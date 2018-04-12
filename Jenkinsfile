@@ -6,5 +6,10 @@ pipeline {
         echo 'hello3'
       }
     }
+    stage('build') {
+      steps {
+        build 'micro-service'
+      }
+    }
   }
 }
